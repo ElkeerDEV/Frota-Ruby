@@ -1,0 +1,19 @@
+
+<h1>Controle de Frotas MDM DYDYO</h1>
+<p style="color: green"><%= notice %></p>
+
+<%= render @frotum %>
+
+
+
+<div class="botao_editar_registro">
+  <%= link_to "Editar Registro", edit_frotum_path(@frotum) %> 
+</div>
+|
+<div class="botao_voltar">
+  <%= link_to "Voltar", frota_path %>
+</div>
+
+<div class="botao_apagar_registro">
+  <%= button_to "Apagar Registro", @frotum, method: :delete %>
+</div>

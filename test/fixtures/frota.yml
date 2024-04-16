@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  veiculo: MyString
+  placa: MyString
+  km_inicial: MyString
+  hora_saida: MyString
+  km_final: MyString
+  hora_entrada: MyString
+  condutor: MyString
+  data: MyString
+
+two:
+  veiculo: MyString
+  placa: MyString
+  km_inicial: MyString
+  hora_saida: MyString
+  km_final: MyString
+  hora_entrada: MyString
+  condutor: MyString
+  data: MyString

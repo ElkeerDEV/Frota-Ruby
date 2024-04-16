@@ -1,0 +1,64 @@
+<h1>Controle de Frotas MDM Dydyo</h1>
+<h3>Bem vindo ao Sistema de Controle de Frota</h3>
+
+<%= form_with(model: frotum) do |form| %>
+  <% if frotum.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(frotum.errors.count, "error") %> prohibited this frotum from being saved:</h2>
+
+      <ul>
+        <% frotum.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="tfrota"> 
+   <tr>
+    <th></th><%= form.label :veiculo, style: "display: block" %>
+    <%= form.text_field :veiculo %> </tr>
+    
+  
+<!---->
+  <div>
+    <%= form.label :placa, style: "display: block" %>
+    <%= form.text_field :placa %>
+  </div>
+
+  <div>
+    <%= form.label :km_inicial, style: "display: block" %>
+    <%= form.text_field :km_inicial %>
+  </div>
+
+  <div>
+    <%= form.label :hora_saida, style: "display: block" %>
+    <%= form.text_field :hora_saida %>
+  </div>
+
+  <div>
+    <%= form.label :km_final, style: "display: block" %>
+    <%= form.text_field :km_final %>
+  </div>
+
+  <div>
+    <%= form.label :hora_entrada, style: "display: block" %>
+    <%= form.text_field :hora_entrada %>
+  </div>
+
+  <div>
+    <%= form.label :condutor, style: "display: block" %>
+    <%= form.text_field :condutor %>
+  </div>
+
+  <div>
+    <%= form.label :data, style: "display: block" %>
+    <%= form.text_field :data %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+

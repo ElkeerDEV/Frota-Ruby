@@ -1,0 +1,2 @@
+class Frotum < ApplicationRecord
+end

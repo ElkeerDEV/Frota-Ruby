@@ -1,0 +1,40 @@
+
+
+
+
+<p style="color: green"><%= notice %></p>
+
+<h1>Controle de Frotas MDM DYDYO</h1>
+<h3>Bem vindo ao Sistema de Controle de Frota</h3>
+<!--
+<div id="frota">
+  <% @frota.each do |frotum| %>
+    <%= render frotum %>
+    <p>
+      <%= link_to "Editar Registro", frotum %>
+    </p>
+  <% end %>
+</div>
+-->
+
+<div class="botao_add_registro">
+  <%= link_to "Adicionar Registro de Frota", new_frotum_path%>
+  </div>
+  <br>
+  <hr>
+
+ <div id="frota">
+  <% @frota.each do |frotum| %>
+    <%= render frotum %>
+    <p>
+      <div class="botao_add_registro">
+  <%= link_to "Visualisar Dados", frotum %>
+  </div>
+      
+    </p>
+  <% end %>
+</div>
+
+
+
+
